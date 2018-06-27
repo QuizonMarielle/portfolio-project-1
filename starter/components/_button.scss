@@ -43,6 +43,28 @@
         z-index: -1;
         transition: all .4s;
     }
+
+    &--yellow {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        color: $color-white;
+    
+        &::after {
+            background-color: $color-secondary-light;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
     
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
@@ -62,7 +84,7 @@
         }
 
         &:hover {
-            background-color: $color-primary;
+            background-color: $color-secondary-light;
             color: $color-white;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.20);
             transition: translateY(-2px);
