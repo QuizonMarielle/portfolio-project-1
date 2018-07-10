@@ -24,7 +24,12 @@ body {
 
         @include respond(phone) {
             letter-spacing: 1.2rem;
-            font-family: 5rem;
+            font-size: 5rem;
+        }
+        
+        @include respond(small-phone) {
+            letter-spacing: 1.2rem;
+            font-size: 4rem;
         }
     }
     
@@ -38,6 +43,10 @@ body {
 
         @include respond(phone) {
             letter-spacing: .8rem;
+        }
+
+        @include respond(small-phone) {
+            margin-bottom: -2.5rem;
         }
     }
 }
