@@ -9,3 +9,4 @@ A Travel Booking Website
 - SVG images in HTML and CSS.
 
 Disclaimer: The design is not mine but the website is developed by me.
+Click the link for a live preview: https://quizonmarielle.github.io/natours/
